@@ -29,13 +29,11 @@ public class JScanLiteCLI {
         initializeEngine();
 
         if (args.length > 0) {
-            // Command line mode for backward compatibility
             String path = args[0];
             scanPath(path);
             return;
         }
 
-        // Interactive mode
         showWelcome();
         runInteractiveMode();
     }

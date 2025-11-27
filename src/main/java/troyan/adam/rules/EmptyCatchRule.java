@@ -5,10 +5,6 @@ import com.github.javaparser.ast.stmt.CatchClause;
 import troyan.adam.core.Rule;
 import troyan.adam.core.RuleResult;
 
-/**
- * Rule that detects empty catch blocks.
- * Empty catch blocks can swallow exceptions silently, which is often a bug.
- */
 public class EmptyCatchRule implements Rule {
     @Override
     public RuleResult apply(CompilationUnit cu) {

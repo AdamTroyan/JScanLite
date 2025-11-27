@@ -22,7 +22,6 @@ public class UnusedImportRule implements Rule {
             usedTypes.add(type.getNameAsString());
         }
 
-        // Collect annotation names
         for (AnnotationExpr annotation : cu.findAll(AnnotationExpr.class)) {
             usedTypes.add(annotation.getNameAsString());
         }
